@@ -19,12 +19,16 @@ body {
     padding: 2rem;
 }
 
-a {
+li {
+    list-style: none;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-right: solid black 2px;
+}
+
+a {
     color: black;
     font-weight: 600;
-    border-right: solid black 2px;
 }
 
 a:hover {
@@ -32,7 +36,7 @@ a:hover {
     color: white;
 }
 
-a:last-child {
+li:last-child {
     border-right: none;
 }
 
@@ -205,10 +209,13 @@ button:hover {
     padding-bottom: 1rem;
 }
 
+.liste2 {
+    border-right: solid white 1px;
+}
+
 .lien {
     color: white;
     font-weight: 300;
-    border-right: solid white 1px;
 }
 
 .lien:hover {
@@ -254,7 +261,7 @@ i {
     .liens {
         flex-direction: column;}
 
-    a {
+    .liste2 {
         border: none;
         margin-bottom: 1rem;
     }
@@ -265,7 +272,6 @@ i {
         width: 5000rem;
     }
 } 
-
 
 @media screen and (max-width: 700px) {
     .bannière {
@@ -282,7 +288,7 @@ i {
     }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 650px) {
     .liens {
         flex-direction: column;
     }
@@ -292,7 +298,7 @@ i {
         text-align: center;
     }
 
-    a {
+    .liste2 {
         border: none;
         margin-bottom: 1rem;
     }
@@ -301,6 +307,12 @@ i {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .liste1 {
+        border: none;
+        margin-bottom: 1rem;
+
     }
 }
 
@@ -316,5 +328,4 @@ i {
     .carte3 {
         margin-right: 0rem;
     }
-
 }
