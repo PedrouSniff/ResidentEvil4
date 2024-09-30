@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-ul {
+.accueil {
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -37,48 +37,46 @@ a:last-child {
 }
 
 #banner {
+    display: flex; 
     background-image: url(../img/banner.jpg);
     background-size: cover;
     padding: 8rem;
     padding-bottom: 10rem;
     color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .bannière {
-    width: 50rem;
-    height: 10rem;
-    padding-left: 10em;
-    display: flex;
-    justify-content: center;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    height: 1rem;
-    padding-top: 3rem;
+    width: 50%;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
     margin-top: 5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main>p {
     display: flex;
     text-align: center;
     margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 main>a {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    margin-left: 37rem;
-    margin-right: 37rem;
+    max-width: 5rem;
     background-color: rgb(184, 24, 45);
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -101,6 +99,9 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+    flex-wrap: wrap;
+    
+
 }
 
 .carte1 {
@@ -109,6 +110,7 @@ h3 {
     border: solid black 1px;
     margin-right: 2rem;
     background-color: rgb(38, 39, 38);
+    margin-bottom: 2rem;
 }
 
 .carte2 {
@@ -117,13 +119,16 @@ h3 {
     border: solid black 1px;
     margin-right: 2rem;
     background-color: rgb(38, 39, 38);
+    margin-bottom: 2rem;
 }
 
 .carte3 {
     width:15rem;
     height: 20rem;
     border: solid black 1px;
+    margin-right: 2rem;
     background-color: rgb(38, 39, 38);
+    margin-bottom: 2rem;
 }
 
 .gameplay {
@@ -146,3 +151,82 @@ h4 {
     color: white;
 }
 
+h5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    color: white;
+    font-size: larger;
+}
+
+.inscription {
+    background-color: rgb(37, 35, 35);
+    padding-bottom: 2rem;
+}
+
+input {
+    padding: 1rem;
+    border: black 1px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    border: black;
+}
+
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+}
+
+.liens {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.lien {
+    color: white;
+    font-weight: 300;
+    border-right: solid white 1px;
+}
+
+.lien:hover {
+    color:black;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    max-width: 5rem;
+    height: 1rem;
+}
+
+i {
+    padding: 10px;
+}
