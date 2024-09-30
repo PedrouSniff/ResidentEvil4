@@ -230,3 +230,91 @@ footer img {
 i {
     padding: 10px;
 }
+
+
+@media screen and (max-width:1060px) {
+    .liens {
+        flex-wrap: wrap;
+        margin: 0rem;
+    }
+
+    .lien {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;    
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liens {
+        flex-direction: column;}
+
+    a {
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+        margin-top: 1rem;
+        height: 2rem;
+        width: 5000rem;
+    }
+} 
+
+
+@media screen and (max-width: 700px) {
+    .bannière {
+        width: 130%;
+    }
+    h1 {
+        display: flex;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .liens {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .liens {
+        flex-direction: column;
+    }
+    h2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a {
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    .accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .carte1 {
+        margin-right: 0rem;
+    }
+
+    .carte2 {
+        margin-right: 0rem;
+    }
+
+    .carte3 {
+        margin-right: 0rem;
+    }
+
+}
